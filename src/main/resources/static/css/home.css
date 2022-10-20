@@ -1,9 +1,19 @@
-.text-testing{
-	color:red;
-}
-
 .border-test{
 	border-style: solid;	
 	border-width: 3px;
-	border-color:red;
+	border-color: orange;
+}
+
+.border-green{
+	border-style: solid;
+	border-width: 3px;
+	border-color: green;
+}
+
+.con-max{
+	max-width: 450px; 
+}
+
+.margin-left{
+	margin-left: 15%;
 }
