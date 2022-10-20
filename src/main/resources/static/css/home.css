@@ -1,0 +1,9 @@
+.text-testing{
+	color:red;
+}
+
+.border-test{
+	border-style: solid;	
+	border-width: 3px;
+	border-color:red;
+}
