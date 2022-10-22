@@ -1,0 +1,6 @@
+.container-border{
+	border-style: solid;	
+	border-width: 3px;
+	border-color: orange;
+	max-width: 700px;
+}

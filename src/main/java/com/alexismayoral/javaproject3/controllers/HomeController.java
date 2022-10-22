@@ -47,18 +47,26 @@ public class HomeController {
 		if(session.getAttribute("userId") == null) {
 			return "redirect:/";
 		}
+		
+		String username = userService.findUserById((Long)session.getAttribute("userId")).getUserName();
+		
 		Long userId = (Long) session.getAttribute("userId");
 		User user = userService.findUserById(userId);
+		
+		model.addAttribute("username", username);
 		model.addAttribute("user", user);
 		return "showUserPosts.jsp";
 	}
 	
 	// Navigates to the create page
 	@GetMapping("/posts/new")
-	public String navigateToCreatePost(@ModelAttribute("blog") Blog blog, HttpSession session ) {
+	public String navigateToCreatePost(@ModelAttribute("blog") Blog blog, HttpSession session, Model model ) {
 		if(session.getAttribute("userId") == null) {
 			return "redirect:/";
 		}
+		String username = userService.findUserById((Long)session.getAttribute("userId")).getUserName();
+		
+		model.addAttribute("username", username);
 		return "createPost.jsp";
 	} 
 	
@@ -75,16 +83,16 @@ public class HomeController {
 		}
 	}
 	
-	// Find a post of the user's choosing
-	
-	
 	// Navigates to the update page 
 	@GetMapping("/posts/{id}/edit")
 	public String editPostForm(Model model, @PathVariable("id") Long id , HttpSession session) {
 		if(session.getAttribute("userId") == null) {
 			return "redirect:/";
 		}
+		String username = userService.findUserById((Long)session.getAttribute("userId")).getUserName();
+		
 		model.addAttribute("blog", mainService.findOneBlog(id));
+		model.addAttribute("username", username);
 		return ("editPost.jsp");
 	}
 	

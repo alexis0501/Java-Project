@@ -32,10 +32,11 @@
 	
 	<h1 class="text-center">All the posts</h1>
 	<br/>
+	
 	<div class="container border-test">
 		<c:forEach var="blog" items="${blogs}"> 
 			
-			<div class="container con-max border-green">
+			<div class="container border-green">
 				<h3>Post#: ${blog.id}</h3>	
 				<h3>Post Title: ${blog.blogTitle}</h3>	
 				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
