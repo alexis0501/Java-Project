@@ -15,7 +15,9 @@
 </head>
 <body>	
 	<h1 class="text-center mt-3">Welcome! Please register to get started!</h1>
+	<!-- Main page container -->
 	<div class="container d-flex mt-3">
+		<!-- Register Container -->
 		<div class="container">	
 			<h1>Register</h1>
 			<!-- Register form -->
@@ -43,6 +45,9 @@
 			<input type="submit" value="Register" class="btn btn-primary mt-3 w-100"/>
 			</form:form>
 		</div>
+		<!-- End of Register container -->
+		
+		<!-- Login container -->
 		<div class="container">		
 			<h1> Login</h1>
 	
@@ -61,6 +66,8 @@
 			<input type="submit" value="Login" class="btn btn-primary mt-3 w-100" />
 			</form:form>
 		</div>	
-	</div>		
+		<!-- End of Login container -->
+	</div>	
+	<!-- End of main page -->	
 </body>
 </html> 
