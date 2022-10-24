@@ -36,7 +36,7 @@
 	<div class="container border-test">
 		<c:forEach var="blog" items="${blogs}"> 
 			
-			<div class="container border-green">
+			<div class="container border-post">
 				<h3>Post#: ${blog.id}</h3>	
 				<h3>Post Title: ${blog.blogTitle}</h3>	
 				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
