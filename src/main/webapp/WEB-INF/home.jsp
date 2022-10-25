@@ -31,12 +31,11 @@
 	
 	
 	<h1 class="text-center">All the posts</h1>
-	<br/>
 	
 	<div class="container border-test">
 		<c:forEach var="blog" items="${blogs}"> 
 			
-			<div class="container border-post">
+			<div class="container border-post mt-3">
 				<h3>Post#: ${blog.id}</h3>	
 				<h3>Post Title: ${blog.blogTitle}</h3>	
 				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
@@ -50,7 +49,7 @@
 						
 						<c:when test="${blog.poster.id.equals(userId) }"> 	
 
-							<a class="btn btn-warning" href="/posts/${blog.id}/edit">Edit</a>
+							<a class="btn btn-warning margin-right" href="/posts/${blog.id}/edit">Edit</a>
 							<form action="/posts/${blog.id}/delete" method="post"> 
 								<input type="hidden" name="_method" value="delete" />
 								<button class="btn btn-danger">Delete</button>
