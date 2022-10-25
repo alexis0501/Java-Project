@@ -52,7 +52,7 @@
 					<form:textarea path="description" class="form-control test-input" />
 					<form:errors path="description" class="text-danger" />
 				</div>
-				<button class="btn btn-primary mt-2">Edit a Post</button>
+				<button class="btn btn-primary mt-2 w-100">Edit a Post</button>
 			</div>
 		</form:form>
 	</div>

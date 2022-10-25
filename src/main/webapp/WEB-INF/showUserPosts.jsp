@@ -29,20 +29,20 @@
         </div>
     </nav>
 
-	<h1 class="text-center">These are all the posts that you have made!</h1>
+	<h1 class="text-center">Your posts</h1>
 	
-	<div class="container container-border">
+	<div class="container">
 		<c:forEach var="blog" items="${user.postBlog}"> 
-			<div class="container border-within">
+			<div class="container border-post mt-3">
 				<h3>Post#: ${blog.id}</h3>	
 				<h3>Post Title: ${blog.blogTitle}</h3>	
-				<h4>Post SubTitle: ${blog.blogSubTitle}</h4>
+				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
 				<p>Post Description: ${blog.description}</p>	
-				<div class="d-flex">
-					<strong> ${blog.poster.userName}</strong>
+				<strong> ${blog.poster.userName}</strong>
+				<div class="d-flex float-end">
 					<c:choose> 
 						<c:when test="${blog.poster.id.equals(userId) }"> 	
-							<a class="btn btn-warning margin-left" href="/posts/${blog.id}/edit">Edit</a>
+							<a class="btn btn-warning margin-right" href="/posts/${blog.id}/edit">Edit</a>
 						
 							<form action="/posts/${blog.id}/delete" method="post"> 
 								<input type="hidden" name="_method" value="delete" />

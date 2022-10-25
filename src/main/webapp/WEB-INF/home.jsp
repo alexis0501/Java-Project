@@ -40,7 +40,7 @@
 				<h3>Post Title: ${blog.blogTitle}</h3>	
 				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
 				<p>Post Description: ${blog.description}</p>	
-				<strong> ${blog.poster.userName}</strong>
+				<strong> Created by: ${blog.poster.userName}</strong>
 				
 				<!-- This div is to make the user who posted and edit + delete button on the same line -->
 				<div class="d-flex float-end">
