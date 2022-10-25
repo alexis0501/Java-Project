@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>Title</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/showUserPosts.css"> <!-- change to match your file/naming structure -->
+<link rel="stylesheet" href="/css/general.css"> <!-- change to match your file/naming structure -->
 <script src="/webjars/jquery/jquery.min.js"></script>
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -38,7 +38,7 @@
 				<h3>Post Title: ${blog.blogTitle}</h3>	
 				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
 				<p>Post Description: ${blog.description}</p>	
-				<strong> ${blog.poster.userName}</strong>
+				<strong> Created by: ${blog.poster.userName}</strong>
 				<div class="d-flex float-end">
 					<c:choose> 
 						<c:when test="${blog.poster.id.equals(userId) }"> 	

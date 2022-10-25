@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>Title</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/logreg.css"> <!-- change to match your file/naming structure -->
+<link rel="stylesheet" href="/css/general.css"> <!-- change to match your file/naming structure -->
 <script src="/webjars/jquery/jquery.min.js"></script>
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
