@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title</title>
+<title>Your Posts</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/general.css"> <!-- change to match your file/naming structure -->
 <script src="/webjars/jquery/jquery.min.js"></script>
