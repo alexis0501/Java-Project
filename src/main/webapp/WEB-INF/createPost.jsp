@@ -29,22 +29,22 @@
     </nav>
 
 	<h1 class="text-center mt-3">Create a Post</h1>
-	<div class="container container-border mt-3">
+	<div class="container border-post mt-3">
 		<form:form action="/posts/new" method="post" modelAttribute="blog"> 
 			<form:hidden path="poster" value="${userId}" />
 			<div class="form-group mt-2">
 				<form:label path="blogTitle">Post Title:</form:label>
-				<form:input path="blogTitle" class="form-control" />
+				<form:input path="blogTitle" class="form-control test-input" />
 				<form:errors path="blogTitle" class="text-danger" />
 			</div>
 			<div class="form-group mt-2">
 				<form:label path="blogSubTitle">Post SubTitle:</form:label>
-				<form:input path="blogSubTitle" class="form-control" />
+				<form:input path="blogSubTitle" class="form-control test-input" />
 				<form:errors path="blogSubTitle" class="text-danger" />
 			</div>
 			<div class="form-group mt-2">
 				<form:label path="description">Post description:</form:label>
-				<form:textarea path="description" class="form-control" />
+				<form:textarea path="description" class="form-control test-input" />
 				<form:errors path="description" class="text-danger" />
 			</div>
 			<button class="btn btn-primary mt-2 ">Create a Post</button>

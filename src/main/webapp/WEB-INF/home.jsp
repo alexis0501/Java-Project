@@ -41,19 +41,19 @@
 				<h3>Post Title: ${blog.blogTitle}</h3>	
 				<h5>Post SubTitle: ${blog.blogSubTitle}</h5>
 				<p>Post Description: ${blog.description}</p>	
+				<strong> ${blog.poster.userName}</strong>
 				
 				<!-- This div is to make the user who posted and edit + delete button on the same line -->
-				<div class="d-flex">
-					<strong> ${blog.poster.userName}</strong>
+				<div class="d-flex float-end">
 				
 					<c:choose> 
 						
 						<c:when test="${blog.poster.id.equals(userId) }"> 	
 
-							<a class="btn btn-warning margin-left" href="/posts/${blog.id}/edit">Edit</a>
+							<a class="btn btn-warning" href="/posts/${blog.id}/edit">Edit</a>
 							<form action="/posts/${blog.id}/delete" method="post"> 
 								<input type="hidden" name="_method" value="delete" />
-								<button class="btn btn-danger margin-left">Delete</button>
+								<button class="btn btn-danger">Delete</button>
 							</form>	
 						</c:when>
 						

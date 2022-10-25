@@ -29,27 +29,27 @@
         </div>
     </nav>
 
-	<h1 class="text-center">Edit a Post</h1>
+	<h1 class="text-center mt-3">Edit a Post</h1>
 	
-	<div class="conainer border-test mt-5">
+	<div class="conainer mt-3">
 		<form:form action="/posts/${blog.id}/edit" method="post" modelAttribute="blog"> 
 			<input type="hidden" name="_method" value="put" />
 			<form:hidden path="poster" value="${blog.poster.id}" />
-			<div class="container border-within">
+			<div class="container border-post">
 			
 				<div class="form-group mt-2">
 					<form:label path="blogTitle">Post Title:</form:label>
-					<form:input path="blogTitle" class="form-control" />
+					<form:input path="blogTitle" class="form-control test-input" />
 					<form:errors path="blogTitle" class="text-danger" />
 				</div>
 				<div class="form-group mt-2">
 					<form:label path="blogSubTitle">Post SubTitle:</form:label>
-					<form:input path="blogSubTitle" class="form-control" />
+					<form:input path="blogSubTitle" class="form-control test-input" />
 					<form:errors path="blogSubTitle" class="text-danger" />
 				</div>
 				<div class="form-group mt-2">
 					<form:label path="description">Post description:</form:label>
-					<form:textarea path="description" class="form-control" />
+					<form:textarea path="description" class="form-control test-input" />
 					<form:errors path="description" class="text-danger" />
 				</div>
 				<button class="btn btn-primary mt-2">Edit a Post</button>
