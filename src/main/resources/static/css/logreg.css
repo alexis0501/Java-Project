@@ -4,4 +4,5 @@ body{
 
 .test-input{
 	background: rgb(243, 243, 243);
+	caret-color: #ff8800;
 }
